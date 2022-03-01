@@ -14,6 +14,12 @@ type (
 	intCustomType = int
 )
 
+const (
+	SidesTriangle = 3
+	SidesSquare   = 4
+	SidesCircle   = 0
+)
+
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
 	switch sidesNum {
 	case 3:
