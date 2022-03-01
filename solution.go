@@ -10,12 +10,12 @@ import "math"
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-type intCustomType struct {
-	sideNum int
-}
+type (
+	intCustomType = int
+)
 
 func CalcSquare(sideLen float64, sidesNum intCustomType) float64 {
-	switch sidesNum.sideNum {
+	switch sidesNum {
 	case 3:
 		return math.Sqrt((3 * math.Pow(sideLen, 4)) / 16)
 	case 4:
